@@ -1,0 +1,2 @@
+* Computer Organization and Architecture
+Created with :heart: and MIPS Assembly by Andresa Valério.
