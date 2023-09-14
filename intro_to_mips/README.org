@@ -1,0 +1,5 @@
+* Introduction: MIPS
+
+1. Read an integer number and, if it is greater than zero, print it's double.
+2. Read 3 numbers and print the sum of the 2 lowest.
+3. Inicialize 3 registers with integer numbers and verify if the correspond to a sequence by the power of 2.
