@@ -3,3 +3,26 @@
 1. Read an integer number and, if it is greater than zero, print it's double.
 2. Read 3 numbers and print the sum of the 2 lowest.
 3. Inicialize 3 registers with integer numbers and verify if the correspond to a sequence by the power of 2.
+
+** Relevant operations
+*** Assembler directives
+Assembler directives are directions to the assembler to take some action or change a setting. 
+#+BEGIN_SRC 
+    .data # The following data items should be stored in the data segment. 
+txt: .asciiz "string" # .asciiz -> Store the string in memory and null-terminate it
+
+    .text # The next items are put in the user text segment. In SPIM, these items may only be instructions or words.
+    .globl main # Declare that symbol main is global and can be referenced from other files.
+#+END_SRC
+
+*** Printing a message
+
+#+BEGIN_SRC 
+    .data
+msg: .asciiz "Hello, World!"
+
+    li $v0,4 # code 4 -> syscall print_string
+    la $a0, msg # load the string from msg
+    syscall
+#+END_SRC
+
